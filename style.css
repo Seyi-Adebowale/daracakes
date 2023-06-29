@@ -760,6 +760,7 @@
   }
   .fas.fa-star{
     font-size: 2.2rem;
+    padding: 0px 3px;
   }
   .rating-stars:focus,
 .rating-stars:active,
