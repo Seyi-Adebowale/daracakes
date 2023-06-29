@@ -756,6 +756,7 @@
   .rating-stars {
     color: #ccc;
     cursor: pointer;
+    outline: none;
   }
   .rating-stars .fas.fa-star {
     transition: color 0.3s;
