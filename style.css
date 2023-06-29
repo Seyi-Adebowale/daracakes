@@ -749,11 +749,6 @@
   /*-----------------------------------*\
     #RESERVATION
   \*-----------------------------------*/
-  
-  /* .reservation-form { margin-block-start: -270px; } */
-  
-  /* .form-text { margin-block-end: 40px; } */
-  
   .form-text .link {
     display: inline;
     color: var(--gold-crayola);
@@ -780,25 +775,16 @@
   .rating-stars{
     margin-left: 20px;
   }
-  /* .form-right .headline-1 { margin-block-end: 40px; } */
-  
-  /* .form-right .contact-label { margin-block-end: 5px; } */
-  
-  /* .form-right .separator { margin: 20px auto; } */
-  
-  /* .form-right .body-4 {
-    color: var(--quick-silver);
-    line-height: var(--lineHeight-3);
-  }
-  
-  .form-right .body-4:not(:last-child) { margin-block-end: 25px; }
-  
-  .form-left,
-  .form-right { padding: 40px 20px 30px; } */
+
   form{
     margin: auto;
   }
- 
+ form .title{
+  color: var(--gold-crayola);
+ }
+ form .btn-submit:hover{
+  color: white;
+ }
   
   textarea.input-field {
     resize: none;
@@ -815,6 +801,14 @@
   .form-right {
     background-repeat: repeat;
     background-position: top left;
+  }
+  .reservation-form {
+    width: 85%;
+    margin: auto;
+    padding: 20px 40px;
+  }
+  .reservation{
+    padding: 30px 0;
   }
   
   /**
@@ -929,15 +923,11 @@
       margin-inline: auto;
     }
   
-  
-  
     /**
      * HEADER
      */
   
     .navbar-list { margin-inline: 30px; }
-  
-  
   
     /**
      * HERO
@@ -971,18 +961,13 @@
      /**
      * RESERVATION
      */
-  
-     /* .reservation .input-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 20px;
+     .reservation-form {
+      width: 70%;
+      margin: auto;
+      padding: 20px 40px;
     }
-  
-    .reservation .input-wrapper:nth-child(4) {
-      grid-template-columns: repeat(3, 1fr);
-    } */
-  
    }
+
    /**
    * responsive for larger than 992px screen
    */
@@ -999,12 +984,12 @@
    /**
      * RESERVATION
      */
-  
      .reservation-form {
-      width: 50%;
+      width: 55%;
       margin: auto;
       padding: 20px 40px;
     }
+     
     
   }
   /**
