@@ -758,6 +758,13 @@
     cursor: pointer;
     outline: none;
   }
+  .rating-stars:focus,
+.rating-stars:active,
+.rating-stars:hover {
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+}
   .rating-stars .fas.fa-star {
     transition: color 0.3s;
     cursor: pointer;
