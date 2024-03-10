@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LKO Foods</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/logo-no-background.png" type="image/png">
-    <script src="https://kit.fontawesome.com/6b219ab309.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- 
-    - #TOP BAR
-  -->
+<!-- <?php
+include('ConnectDB.php');
+?> -->
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LKO Foods</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="./images/logo-removebg-preview (1).png" type="image/png" />
+  <script src="https://kit.fontawesome.com/6b219ab309.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- TOP BAR -->
   <div class="topbar">
     <div class="container">
 
       <address class="topbar-item">
         <div class="icon">
-            <i class="fas fa-map-marker-alt"></i>
+          <i class="fas fa-map-marker-alt"></i>
         </div>
 
         <span class="span">
-          19, Linden Avenue, Duchy Estate, Salford, M6 7HT
+          Address
         </span>
       </address>
 
@@ -33,93 +35,73 @@
 
       <div class="topbar-item item-2">
         <div class="icon">
-            <i class="far fa-clock"></i>
+          <i class="far fa-clock"></i>
         </div>
 
-        <span class="span">OPEN: Monday - Friday: 12pm - 7pm &nbsp;&nbsp; CLOSED: Weekends & Bank Holidays</span>
+        <span class="span">OPEN: Monday - Friday: 9am - 7pm &nbsp;&nbsp; CLOSED: Weekends & Bank Holidays</span>
       </div>
 
-      <a href="https://wa.me/c/447368325136" class="topbar-item link" target="_blank">
+      <a href="#" class="topbar-item link" target="_blank">
         <div class="icon">
-            <i class="fas fa-phone-alt"></i>
+          <i class="fas fa-phone-alt"></i>
         </div>
 
-        <span class="span">+44 7368 3215 136</span>
+        <span class="span">+44 **** **** ***</span>
       </a>
-
-
     </div>
   </div>
-    <!-- 
-    - #HEADER
-  -->
 
+    <!-- HEADER -->
   <header class="header" data-header>
     <div class="container">
 
       <a href="index.html" class="logo">
-        <img src="./images/logo-no-background.png" width="160" height="50" alt="Logo">
+        <img src="./images/logo-removebg-preview (1).png" width="100" height="40" alt="Logo">
       </a>
 
       <nav class="navbar" data-navbar>
 
         <button class="close-btn" aria-label="close menu" data-nav-toggler>
-            <i class="fas fa-times"></i>
+          <i class="fas fa-times"></i>
         </button>
 
         <a href="index.html" class="logo">
-          <img src="./images/logo-no-background.png" width="160" height="50" alt="Logo">
+          <img src="./images/logo-removebg-preview (1).png" width="100" height="40" alt="Logo">
         </a>
 
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="#home" class="navbar-link hover-underline active">
+            <a href="index.html" class="navbar-link hover-underline active">
               <div class="separator"></div>
-
               <span class="span">Home</span>
             </a>
           </li>
 
           <li class="navbar-item">
-            <a href="https://wa.me/c/447368325136" class="navbar-link hover-underline" target="_blank">
+            <a href="#" class="navbar-link hover-underline" target="_blank">
               <div class="separator"></div>
-
               <span class="span">Menu</span>
             </a>
           </li>
 
           <li class="navbar-item">
-            <a href="#reviews" class="navbar-link hover-underline">
+            <a href="#reviews-buttons" class="navbar-link hover-underline" onclick="toggleNavbar()">
               <div class="separator"></div>
-
               <span class="span">Reviews</span>
             </a>
           </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
-              <div class="separator"></div>
-
-              <span class="span">Contact</span>
-            </a>
-          </li>
-
         </ul>
 
         <div class="text-center">
-          <p class="body-4 navbar-text">OPEN: Monday - Friday: 12pm - 7pm &nbsp;&nbsp; CLOSED: Weekends & Bank Holidays</p>
-
-
+          <p class="body-4 navbar-text">OPEN: Monday - Friday: 12pm - 7pm &nbsp;&nbsp; CLOSED: Weekends & Bank Holidays
+          </p>
           <div class="separator"></div>
-
           <p class="contact-label">Order Request</p>
-
-          <a href="https://wa.me/c/447368325136" class="body-1 contact-number hover-underline" target="_blank">
-            +44 7368 3215 136
+          <a href="#" class="body-1 contact-number hover-underline" target="_blank">
+            +44 **** **** ***
           </a>
         </div>
-
       </nav>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
@@ -129,107 +111,140 @@
       </button>
 
       <div class="overlay" data-nav-toggler data-overlay></div>
-
     </div>
   </header>
 
   <main>
-    <article>
+    <!-- HERO -->
+    <section class="hero text-center" aria-label="home" id="home">
+      <ul class="hero-slider" data-hero-slider>
+        <li class="slider-item active" data-hero-slider-item>
 
-      <!-- 
-        - #HERO
-      -->
+          <div class="slider-bg">
+            <!-- <img src="./images/umesh-soni-LDnmyOaA-ew-unsplash.jpg" width="1880" height="950" alt="" class="img-cover"> -->
+          </div>
 
-      <section class="hero text-center" aria-label="home" id="home">
+          <p class="label-2 section-subtitle slider-reveal">WELCOME TO DARACAKES</p>
 
-        <ul class="hero-slider" data-hero-slider>
+          <h1 class="display-1 hero-title slider-reveal">
+            Blissful Bites <br> Await
+          </h1>
 
-            <li class="slider-item active" data-hero-slider-item>
-  
-              <div class="slider-bg">
-                <img src="./images/background.jpg" width="1880" height="950" alt="" class="img-cover">
+          <!-- <p class="body-2 hero-text slider-reveal">
+            Savor the extraordinary
+          </p> -->
+
+          <a href="#" class="btn btn-secondary slider-reveal" target="_blank">
+            <span class="text text-1">View Our Menu</span>
+
+            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+          </a>
+          <!-- <div class="address">
+            <p class="label-2  title">ADDRESS</p>
+            <p class="body-2 hero-text text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div> -->
+        </li>
+    </section>
+
+    <section class="reviews-buttons" id="reviews-buttons">
+      <button class="btn btn-secondary btn-submit" id="read-reviews-btn">
+        <span class="text text-1">Read reviews</span>
+        <span class="text text-2" aria-hidden="true">Read reviews</span>
+      </button>
+      <button class="btn btn-secondary btn-submit" id="post-review-btn">
+        <span class="text text-1">Post review</span>
+        <span class="text text-2" aria-hidden="true">Post review</span>
+      </button>
+    </section>
+    <button class="btn btn-secondary btn-submit recommend-btn">
+      <span class="text text-1">Recommend Daracakes</span>
+      <span class="text text-2" aria-hidden="true">Recommend Daracakes</span>
+    </button>
+
+    <section class="reviews section" id="reviews">
+      <p class="label-2  title">CUSTOMERS' REVIEWS</p>
+      <div class="reviews-container">
+        <?php
+
+        $viewQuery = "SELECT * FROM UserReviews ORDER BY ID DESC";
+
+        $result = mysqli_query($dbConnection, $viewQuery);
+
+        if ($result->num_rows > 0) {
+          while ($row = $result->fetch_assoc()) {
+
+            echo '<div class="reviews-box">';
+            echo '<p class="name">' . $row["Name"] . '</p>';
+            echo '<p class="star">' . $row["Star"] . '</p>';
+            echo '<div class="star-rating"></div>';
+            echo '<p class="review">' . $row["Review"] . '</p>';
+            echo '</div>';
+          }
+        } else {
+          echo "<p>No reviews yet</p> ";
+        }
+        ?>
+      </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+      <div class="container">
+        <div class="form reservation-form bg-black-10">
+
+          <form name="customer">
+            <h2 class="headline-1 text-center">Post a Review</h2>
+            <p class="form-text text-center title">
+              Please fill out the form to review our services
+            </p>
+
+            <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+
+            <div class="stars-box">
+              <label class="inline-label" for="star">Stars:</label>
+              <div class="rating-stars">
+                <i class="fas fa-star" data-rating="1"></i>
+                <i class="fas fa-star" data-rating="2"></i>
+                <i class="fas fa-star" data-rating="3"></i>
+                <i class="fas fa-star" data-rating="4"></i>
+                <i class="fas fa-star" data-rating="5"></i>
               </div>
-  
-              <p class="label-2 section-subtitle slider-reveal">A Delightful Experience</p>
-  
-              <h1 class="display-1 hero-title slider-reveal">
-                Home-made foods:<br>
-                Tasty and Healthy
-              </h1>
-  
-              <p class="body-2 hero-text slider-reveal">
-                Savor the extraordinary
-              </p>
-  
-              <a href="https://wa.me/c/447368325136" class="btn btn-primary slider-reveal" target="_blank">
-                <span class="text text-1">View Our Menu</span>
-  
-                <span class="text text-2" aria-hidden="true">View Our Menu</span>
-              </a>
-              <div class="address">
-                <p class="label-2  title">COLLECTION ADDRESS</p>
-                <p class="body-2 hero-text text">
-                19, Linden Avenue, Duchy Estate, Salford, M6 7HT
-              </p>
-              </div>
-              
+              <input type="hidden" name="star" id="stars-input" required />
+            </div>
 
-  
-            </li>
+            <textarea name="review" placeholder="Your review" autocomplete="off" class="input-field"></textarea>
 
-      </section>
+            <button type="submit" class="btn btn-secondary btn-submit">
+              <span class="text text-1">Post your review</span>
+              <span class="text text-2" aria-hidden="true">Post your review</span>
+            </button>
+          </form>
+    </section>
 
-      <section class="reservation" id="reviews">
-        <div class="container">
+    <!-- <div class="deliveroo-notice">
+      <img src="./images/logo-no-background.png" alt="lko-logo" width="150" height="50">
+      <p>IS NOW <br> ON</p>
+      <img src="./images/deliveroo.png" alt="deliveroo" width="100" height="60">
+    </div>
 
-          <div class="form reservation-form bg-black-10">
+    <div class="address contact">
+      <p class="label-2  title contact-title">CONTACT US</p>
+      <p class="body-2 hero-text text contact-text">
+        +44 7368 3215 136
+      </p>
+    </div> -->
+    
+    <!-- <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close"><i class="fas fa-times" id="closeBtn"></i></span>
+        <img src="./images/logo-no-background.png" alt="lko-logo" width="200" height="150">
+        <p>IS NOW <br> ON</p>
+        <img src="./images/deliveroo.png" alt="deliveroo" width="150" height="120">
+      </div>
+    </div> -->
 
-            <form action="">
-
-              <h2 class="headline-1 text-center">Post a Review</h2>
-
-              <p class="form-text text-center title">
-                Please fill out the form to review our services
-              </p>
-
-              
-                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
-
-                
-                  <label class="inline-label" for="photo">Upload Photo:</label>
-                <input type="file" name="photo" placeholder="Upload Photo" autocomplete="off" class="input-field">
-                
-                
-  
-                <input type="text" name="item" placeholder="Item bought" autocomplete="off" class="input-field">
-              
-                <div class="stars-box">
-                  <label class="inline-label" for="stars">Stars:</label>
-                <div class="rating-stars">
-                  <i class="fas fa-star" data-rating="1"></i>
-                  <i class="fas fa-star" data-rating="2"></i>
-                  <i class="fas fa-star" data-rating="3"></i>
-                  <i class="fas fa-star" data-rating="4"></i>
-                  <i class="fas fa-star" data-rating="5"></i>
-                </div>
-                <input type="hidden" name="stars" id="stars-input" required />
-                </div>
-                
-              <textarea name="review" placeholder="Your review" autocomplete="off" class="input-field"></textarea>
-
-              <button type="submit" class="btn btn-secondary btn-submit">
-                <span class="text text-1">Post your review</span>
-                <span class="text text-2" aria-hidden="true">Post your review</span
-              </button>
-
-            </form>
-          </section>
-
-      
- 
-    </article>
   </main>
-
   <script src="./script.js"></script>
 </body>
 </html>
