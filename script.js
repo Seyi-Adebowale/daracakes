@@ -21,6 +21,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+var swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  // spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  autoplay: {
+      delay: 3000, // Delay between slides in milliseconds (adjust as needed)
+      disableOnInteraction: false, // Autoplay continues even if the user interacts with it
+    },
+});
+
 // add event listener on multiple elements
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
