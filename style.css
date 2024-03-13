@@ -556,20 +556,20 @@
   }
   .swipe1{
     background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
     ), url("images/umesh-soni-LDnmyOaA-ew-unsplash.jpg");
   }
   .swipe2{
     background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
     ), url("images/pexels-photo-1179002\ \(1\).jpeg");
   }
   .swipe3{
     background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
     ), url("images/pexels-quang-nguyen-vinh-2144112.jpg");
   }
   .hero .slider-item.active .slider-bg {
